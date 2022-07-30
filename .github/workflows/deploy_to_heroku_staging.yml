@@ -33,7 +33,7 @@ jobs:
         with:
           email: duythien0914@gmail.com
           heroku_api_key: 2426998e-e06d-4018-93a9-6aba380df29c
-          heroku_app_name: accountsdbhttpconsumerstaging
+          heroku_app_name: accounts-db-http-consumer-staging
           dockerfile_name: Dockerfile
           docker_options: '--target http-consumer'
           process_type: worker
