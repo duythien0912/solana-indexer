@@ -23,7 +23,7 @@ jobs:
         with:
           email: duythien0914@gmail.com
           heroku_api_key: 2426998e-e06d-4018-93a9-6aba380df29c
-          heroku_app_name: accounts-db-consumer-staging
+          heroku_app_name: noxal-accounts-db-consumer-stg
           dockerfile_name: Dockerfile
           docker_options: '--target geyser-consumer'
           process_type: worker
@@ -33,7 +33,7 @@ jobs:
         with:
           email: duythien0914@gmail.com
           heroku_api_key: 2426998e-e06d-4018-93a9-6aba380df29c
-          heroku_app_name: accounts-db-http-consumer-staging
+          heroku_app_name: noxal-sdbhttpconsumerstg
           dockerfile_name: Dockerfile
           docker_options: '--target http-consumer'
           process_type: worker
@@ -43,6 +43,6 @@ jobs:
         with:
           email: duythien0914@gmail.com
           heroku_api_key: 2426998e-e06d-4018-93a9-6aba380df29c
-          heroku_app_name: indexer-graphql-staging
+          heroku_app_name: noxal-indexer-graphql-staging
           dockerfile_name: Dockerfile
           docker_options: '--target graphql'
