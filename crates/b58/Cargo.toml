@@ -1,0 +1,23 @@
+[package]
+name = "holaplex-indexer-b58"
+version = "0.0.0"
+authors = [
+  "ryans <ryans@holaplex.com>",
+]
+edition = "2021"
+description = "Development tool for handling base58 on the command line"
+documentation = "http://example.com/"
+readme = "../../README.md"
+repository = "https://github.com/holaplex/indexer"
+license = "AGPL-3.0-or-later"
+keywords = ["base58"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "b58"
+path = "main.rs"
+
+[dependencies]
+bs58 = "0.4.0"
+clap = "3.0.0-beta.5"
+hex = "0.4.3"

@@ -1,0 +1,37 @@
+[package]
+name = "holaplex-indexer-graphql"
+version = "0.1.0"
+authors = [
+  "Holaplex Engineering <hola@holaplex.com>"
+]
+edition = "2021"
+description = "GraphQL server for providing cached Metaplex data"
+documentation = "https://docs.rs/holaplex-indexer-graphql"
+readme = "../../README.md"
+repository = "https://github.com/holaplex/indexer"
+license = "AGPL-3.0-or-later"
+keywords = ["solana", "metaplex", "holaplex", "web3", "graphql"]
+categories = ["cryptocurrency::cryptocurrencies", "web-programming"]
+
+[dependencies]
+actix-cors = "0.6.0-beta.8"
+actix-web = "4.0.0-beta.21"
+async-trait = "0.1"
+dataloader = "0.14.0"
+derive_more = "0.99.17"
+futures-util = "0.3.21"
+itertools = "0.10.2"
+juniper = "0.15.9"
+percent-encoding = "2.1.0"
+reqwest = { version = "0.11.6", features = ["json"] }
+serde = { version = "1.0.130", features = ["derive"] }
+serde_json = "1.0.70"
+thiserror = "1.0.30"
+base64 = "0.13.0"
+md5 = "0.7.0"
+
+[dependencies.indexer-core]
+package = "holaplex-indexer-core"
+version = "=0.1.0"
+path = "../core"
+features = ["meilisearch"]
