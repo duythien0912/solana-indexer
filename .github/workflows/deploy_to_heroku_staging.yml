@@ -21,8 +21,8 @@ jobs:
       - name: Geyser consumer
         uses: gonuit/heroku-docker-deploy@v1.3.3
         with:
-          email: ${{ secrets.HEROKU_EMAIL }}
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          email: duythien0914@gmail.com
+          heroku_api_key: 2426998e-e06d-4018-93a9-6aba380df29c
           heroku_app_name: accounts-db-consumer-staging
           dockerfile_name: Dockerfile
           docker_options: '--target geyser-consumer'
@@ -31,8 +31,8 @@ jobs:
       - name: HTTP consumer
         uses: gonuit/heroku-docker-deploy@v1.3.3
         with:
-          email: ${{ secrets.HEROKU_EMAIL }}
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          email: duythien0914@gmail.com
+          heroku_api_key: 2426998e-e06d-4018-93a9-6aba380df29c
           heroku_app_name: accountsdbhttpconsumerstaging
           dockerfile_name: Dockerfile
           docker_options: '--target http-consumer'
@@ -41,8 +41,8 @@ jobs:
       - name: GraphQL server
         uses: gonuit/heroku-docker-deploy@v1.3.3
         with:
-          email: ${{ secrets.HEROKU_EMAIL }}
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          email: duythien0914@gmail.com
+          heroku_api_key: 2426998e-e06d-4018-93a9-6aba380df29c
           heroku_app_name: indexer-graphql-staging
           dockerfile_name: Dockerfile
           docker_options: '--target graphql'
