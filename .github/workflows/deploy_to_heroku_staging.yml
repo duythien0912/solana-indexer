@@ -2,7 +2,7 @@ name: Heroku (staging)
 
 on:
   push:
-    branches: [dev, deploy_config, debug_validator]
+    branches: [main, dev, deploy_config, debug_validator]
 
 jobs:
   build:
