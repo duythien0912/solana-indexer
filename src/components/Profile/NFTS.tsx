@@ -6,7 +6,7 @@ import Link from "next/link";
 import axios from "axios";
 import { Card, Col, Row, Text, Button } from "@nextui-org/react";
 
-const baseURL = "https://powerful-coast-99873.herokuapp.com";
+const baseURL = "https://5100-augustine76-auctionhous-iboms9z2jwe.ws-us71.gitpod.io";
 
 export const NFTS = (props) => {
   const [image, setimage] = useState("");

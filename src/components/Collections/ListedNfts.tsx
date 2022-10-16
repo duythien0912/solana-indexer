@@ -18,7 +18,7 @@ import {
 } from "@nextui-org/react";
 const types = ["All Items", "NFTs Activity"];
 
-const baseURL = "https://powerful-coast-99873.herokuapp.com";
+const baseURL = "https://5100-augustine76-auctionhous-iboms9z2jwe.ws-us71.gitpod.io";
 export const ListedNfts = () => {
   const [active, setActive] = useState(types[0]);
   const router = useRouter();
@@ -180,7 +180,7 @@ export const ListedNfts = () => {
         <Row gap={2} justify="center" align="center" css={{marginBottom: "50px"}}>
           {active == types[0] ? (
             <Grid.Container gap={2} justify="center">
-              {collectionList && collectionList.map((x) => {
+              {collectionList && collectionList?.map((x) => {
                 return (
                   <Grid xs={12} md={4} lg={2} justify="center">
                     <Nfts data={x} key={Ikey++} />

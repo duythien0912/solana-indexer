@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { Collections } from "./Collections";
 import { Container, Card, Col, Row, Grid } from "@nextui-org/react";
 import axios from "axios";
-const baseURL = "https://powerful-coast-99873.herokuapp.com";
+const baseURL = "https://5100-augustine76-auctionhous-iboms9z2jwe.ws-us71.gitpod.io";
 export const ListedCollections = () => {
   let res = [];
   let Ikey = 0;
@@ -12,7 +12,7 @@ export const ListedCollections = () => {
   const [updated, setupdated] = useState(false);
   const getCollections = async () => {
     try {
-      const response = await axios.post(`${baseURL}/fetchAllCollection`)
+      const response = await axios.get(`${baseURL}/fetchAllCollection`)
         .then(res => {
           return res;
         });
@@ -42,7 +42,7 @@ export const ListedCollections = () => {
       <Container>
         <Row gap={2} justify="center" align="center">
           <Grid.Container gap={2} justify="center">
-            {collectionList.map((x) => {
+            {collectionList?.map((x) => {
               return (
                 <Grid justify="center" xs={12} md={2} lg={2}>
                   <Collections data={x} key={Ikey++} />

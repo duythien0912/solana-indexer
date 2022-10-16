@@ -20,7 +20,7 @@ import { useWallet } from '@solana/wallet-adapter-react';
 import { Input, Container, Row, Col, Textarea, Button } from "@nextui-org/react";
 import axios from "axios";
 
-const baseURL = "https://powerful-coast-99873.herokuapp.com";
+const baseURL = "https://5100-augustine76-auctionhous-iboms9z2jwe.ws-us71.gitpod.io";
 const useStyles = makeStyles(() => ({
     root: {
         maxWidth: 343,

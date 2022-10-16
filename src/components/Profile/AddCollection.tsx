@@ -13,7 +13,7 @@ import { Input, Container, Row, Col, Textarea, Button } from "@nextui-org/react"
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 import { useWallet } from "@solana/wallet-adapter-react";
 
-const baseURL = "https://powerful-coast-99873.herokuapp.com";
+const baseURL = "https://5100-augustine76-auctionhous-iboms9z2jwe.ws-us71.gitpod.io";
 
 export function CollectionForm() {
   const [name, setName] = useState("");

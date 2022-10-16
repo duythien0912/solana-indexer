@@ -1,4 +1,4 @@
-@base_url = https://powerful-coast-99873.herokuapp.com
+@base_url = https://5100-augustine76-auctionhous-iboms9z2jwe.ws-us71.gitpod.io
 
 ### Create user signup
 POST {{base_url}}/createSignUp

@@ -9,7 +9,7 @@ TimeAgo.addDefaultLocale(en)
 
 const timeAgo = new TimeAgo('en-US');
 
-const baseURL = "https://powerful-coast-99873.herokuapp.com";
+const baseURL = "https://5100-augustine76-auctionhous-iboms9z2jwe.ws-us71.gitpod.io";
 export default function NftActivity(props) {
   const columns = [
     { name: "MintKey", uid: "mintKey" },
